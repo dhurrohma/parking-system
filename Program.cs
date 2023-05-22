@@ -48,11 +48,7 @@ namespace ParkingSystem
                             Console.Write("Masukkan plat nomor kendaraan : ");
                             string platNumber = Console.ReadLine();
 
-                            Console.WriteLine("Jenis kendaraan: ");
-                            Console.WriteLine("1. Mobil kecil");
-                            Console.WriteLine("2. Motor");
-
-                            Console.Write("Masukkan pilihan jenis kendaraan : ");
+                            Console.Write("Masukkan jenis kendaraan (MobilKecil/Motor) : ");
                             string inputType = Console.ReadLine();
                             TypeTransportation type;
 
@@ -120,10 +116,7 @@ namespace ParkingSystem
                     
                     case "7":
                         Console.WriteLine("===== Report on the number of vehicles based on the type of vehicle =====");
-                        Console.WriteLine("Pilihan jenis kendaraan:");
-                        Console.WriteLine("1. Mobil Kecil");
-                        Console.WriteLine("2. Motor");
-                        Console.Write("Masukkan pilihan jenis kendaraan: ");
+                        Console.Write("Masukkan jenis kendaraan (MobilKecil/Motor): ");
                         string inputType1 = Console.ReadLine();
 
                         if (Enum.TryParse<TypeTransportation>(inputType1, out var typeReport))
